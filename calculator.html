@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#">
+      <input type="text" name="cipars1" id="cipars1" />
+      <input type="text" name="zīme" id="zīme" />
+      <input type="text" name="cipars2" id="cipars2" />
+      <button type="button" name="poga" id="poga">Rēķināt</button>
+    </form>
+  </body>
+  <script>
+    let button = document.getElementById("poga");
+
+    button.addEventListener("click", function (e) {
+      let number1 = document.getElementById("cipars1").value;
+      let sign = document.getElementById("zīme").value;
+      let number2 = document.getElementById("cipars2").value;
+
+    if ((sign = "*")) {
+        let result = number1 * number2;
+        console.log(result);
+      }
+    else
+    if ((sign = ":")) {
+        let result = number1 / number2;
+        console.log(result);
+      }
+    else
+    if (sign = "+") {
+        let result = (number1 + number2)
+        console.log(result)
+      }
+    else
+    if (sign = "-") {
+        let result = (number1 - number2)
+        console.log(result)
+    }
+    });
+  </script>
+</html>
